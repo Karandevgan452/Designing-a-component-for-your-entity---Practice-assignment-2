@@ -8,15 +8,14 @@ const Productcard = () => {
   const productPrice = "$1100";
 
   return (
-    <div className="border p-4 rounded shadow-md w-64 text-center">
+    <div>
       <img
       style={{width: "200px"}}
         src={productImage}
         alt='image'
-        className="w-full h-40 object-cover mb-2 rounded"
       />
-      <h2 className="text-lg font-semibold mb-1">{productName}</h2>
-      <p className="text-gray-700 mb-2">{productPrice}</p>
+      <h2>{productName}</h2>
+      <p>{productPrice}</p>
       <ViewProductButton />
     </div>
   );
